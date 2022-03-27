@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [sample]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" name="TestScripts(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.tests.VerifyHomePage">
+        <methods>
+          <include name="VerifyHome"/>
+          <include name="ContactsPage"/>
+        </methods>
+      </class> <!-- com.qa.tests.VerifyHomePage -->
+      <class name="com.qa.tests.LoginPageTest">
+        <methods>
+          <include name="OpenWebsite"/>
+          <include name="VerifyTitle"/>
+          <include name="LoginToCRM"/>
+        </methods>
+      </class> <!-- com.qa.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- TestScripts(failed) -->
+</suite> <!-- Failed suite [sample] -->

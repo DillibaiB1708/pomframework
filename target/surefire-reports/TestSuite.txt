@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 4.566 s <<< FAILURE! - in TestSuite
+OpenWebsite(com.qa.tests.LoginPageTest)  Time elapsed: 4.349 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.qa.tests.LoginPageTest.prop" is null
+	at com.qa.tests.LoginPageTest.OpenWebsite(LoginPageTest.java:23)
+
+VerifyHome(com.qa.tests.VerifyHomePage)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+	at com.qa.tests.VerifyHomePage.VerifyHome(VerifyHomePage.java:15)
+
+ContactsPage(com.qa.tests.VerifyHomePage)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null
+	at com.qa.tests.VerifyHomePage.ContactsPage(VerifyHomePage.java:23)
+

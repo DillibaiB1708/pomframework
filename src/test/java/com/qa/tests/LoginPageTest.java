@@ -1,19 +1,18 @@
 package com.qa.tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.qa.testbase.BaseClass;
 
 public class LoginPageTest extends BaseClass{
 	
-	WebDriver driver;
 	
 	@BeforeClass
 	public void OpenWebsite() {
@@ -21,6 +20,7 @@ public class LoginPageTest extends BaseClass{
 		init();
 		
 		driver.get(prop.getProperty("url"));
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 	}
 	@Test(priority = 1)
