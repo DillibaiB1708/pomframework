@@ -32,6 +32,7 @@ public class BaseClass {
 
 		// System.setProperty("webdriver.chrome.driver",  "/Users/bdillibai/Documents/EclipseWorkspace/pomframework/src/test/resources/com/qa/configuration/chromedriver 4");
 		//System.setProperty("webdriver.chrome.driver", "/Users/bdillibai/Documents/EclipseWorkspace/pomframework/src/test/resources/com/qa/configuration/chromedriver 6");
+		//System.setProperty("Webdriver.chrome.driver", chromedriver);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
