@@ -5,8 +5,9 @@
     <classes>
       <class name="com.qa.tests.LoginPageTest">
         <methods>
-          <include name="OpenWebsite"/>
-          <include name="VerifyTitle"/>
+          <include name="endtest"/>
+          <include name="endTest"/>
+          <include name="beforeTest"/>
           <include name="LoginToCRM"/>
         </methods>
       </class> <!-- com.qa.tests.LoginPageTest -->

@@ -3,19 +3,22 @@
 <suite thread-count="2" name="Failed suite [sample]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="2" name="TestScripts(failed)" verbose="0">
     <classes>
-      <class name="com.qa.tests.VerifyHomePage">
-        <methods>
-          <include name="VerifyHome"/>
-          <include name="ContactsPage"/>
-        </methods>
-      </class> <!-- com.qa.tests.VerifyHomePage -->
       <class name="com.qa.tests.LoginPageTest">
         <methods>
-          <include name="OpenWebsite"/>
-          <include name="VerifyTitle"/>
+          <include name="endTest"/>
+          <include name="endtest"/>
+          <include name="beforeTest"/>
           <include name="LoginToCRM"/>
         </methods>
       </class> <!-- com.qa.tests.LoginPageTest -->
+      <class name="com.qa.tests.VerifyHomePage">
+        <methods>
+          <include name="ContactsPage"/>
+          <include name="endtest"/>
+          <include name="endTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.qa.tests.VerifyHomePage -->
     </classes>
   </test> <!-- TestScripts(failed) -->
 </suite> <!-- Failed suite [sample] -->

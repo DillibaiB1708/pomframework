@@ -1,16 +1,42 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 4.566 s <<< FAILURE! - in TestSuite
-OpenWebsite(com.qa.tests.LoginPageTest)  Time elapsed: 4.349 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "com.qa.tests.LoginPageTest.prop" is null
-	at com.qa.tests.LoginPageTest.OpenWebsite(LoginPageTest.java:23)
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 1, Time elapsed: 34.593 s <<< FAILURE! - in TestSuite
+LoginToCRM(com.qa.tests.LoginPageTest)  Time elapsed: 20.56 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name = 'email']"}
+  (Session info: chrome=99.0.4844.84)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'BPSSMBA072s-Air', ip: '2401:4900:33a9:92e7:a878:88b0:b7a6:d2db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/tq/kknhyfln72d...}, goog:chromeOptions: {debuggerAddress: localhost:53284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c92462ea09faca2fe9a88fd2465b4b5
+*** Element info: {Using=xpath, value=//input[@name = 'email']}
+	at com.qa.tests.LoginPageTest.LoginToCRM(LoginPageTest.java:53)
 
-VerifyHome(com.qa.tests.VerifyHomePage)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
-	at com.qa.tests.VerifyHomePage.VerifyHome(VerifyHomePage.java:15)
+ContactsPage(com.qa.tests.VerifyHomePage)  Time elapsed: 0.018 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'BPSSMBA072s-Air', ip: '2401:4900:33a9:92e7:a878:88b0:b7a6:d2db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/tq/kknhyfln72d...}, goog:chromeOptions: {debuggerAddress: localhost:53284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c92462ea09faca2fe9a88fd2465b4b5
+*** Element info: {Using=css selector, value=frame[name='mainpanel'],iframe[name='mainpanel']}
+	at com.qa.tests.VerifyHomePage.ContactsPage(VerifyHomePage.java:43)
 
-ContactsPage(com.qa.tests.VerifyHomePage)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.switchTo()" because "this.driver" is null
-	at com.qa.tests.VerifyHomePage.ContactsPage(VerifyHomePage.java:23)
+endtest(com.qa.tests.VerifyHomePage)  Time elapsed: 0.028 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'BPSSMBA072s-Air', ip: '2401:4900:33a9:92e7:a878:88b0:b7a6:d2db%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/tq/kknhyfln72d...}, goog:chromeOptions: {debuggerAddress: localhost:53284}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c92462ea09faca2fe9a88fd2465b4b5
+	at com.qa.tests.VerifyHomePage.endtest(VerifyHomePage.java:54)
 
